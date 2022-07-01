@@ -167,7 +167,6 @@ const estampaHdn = document.getElementsByClassName("estampa-hdn");
 
 
 estampaHdn[0].style.display = "none";
-// estampaHdn[1].style.display = "none";
 
 function renderView (section) {
     let images = "";
@@ -257,6 +256,5 @@ renderView(artesHome);
 eventCheck(ilustraBtn, artesHome);
 eventCheck(animaBtn, artesAnim);
 eventCheck(estampasCD, artesEstampasCD);
-// eventCheck(estampasBV, artesEstampasBV);
 eventCheck(jogosBtn, artesGames);
 eventCheck(sobreBtn, artesHome);
