@@ -25,6 +25,10 @@
     display: none;
 }
 
+.minimenucont {
+    display: none;
+}
+
 .menu {
     display: flexbox;
     justify-content: center;
@@ -175,11 +179,55 @@
 
     .menu img {
         max-width: 20%;
+        min-height: 20%;
         margin: 0 5% 8% 30%;
     }
 
     .menuBtn, .redes, .nome{
         display: none;
+    }
+    
+    .logoM {
+        display: flex;
+        margin: auto;
+    }
+
+    .menuBtnColl li {
+        margin: 0 10% 0 0;
+        text-align: center;
+        list-style: none;
+    }
+
+    .menuBtnColl li button:hover {
+        color: white;
+    }
+
+    .menuBtnColl li button {
+        background-color: transparent;
+        border: 0;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    .minimenucont {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .redesa {
+        margin-left: 25%;
+        display: inline;
+    }
+    
+    .redesa a img {
+        max-width: 13%;
+        margin: 0 3px;
+        transition: .2s ease;
+    }
+    
+    .redesa a img:hover {
+        transform: rotate(5deg);
     }
 
     .mCollapse {
@@ -193,10 +241,5 @@
 
     .navbar-toggler img {
         width: 200px;
-    }
-
-    .logoM {
-        display: flex;
-        margin: auto;
     }
 }

@@ -162,6 +162,7 @@ const estampasBV = document.getElementById("barbaVerde-btn");
 const jogosBtn = document.getElementById("jogos-btn");
 const sobreBtn = document.getElementById("sobre-btn");
 
+const menuColl = document.getElementById("menu-coll");
 
 const estampaHdn = document.getElementsByClassName("estampa-hdn");
 
@@ -171,7 +172,7 @@ estampaHdn[0].style.display = "none";
 function renderView (section) {
     let images = "";
 
-    if(section != artesAnim && section != artesGames){
+    if(section != artesAnim && section != artesGames && section != 'subMenu'){
         for (let key in section) {
             images += `
             <div class="img-row">
@@ -208,6 +209,23 @@ function renderView (section) {
             </div>
             `
         }
+    } else if (section === 'subMenu') {
+        images += `<div class="minimenucont">
+            <ul class="menuBtnColl pt-3 pb-4">
+                <li><button onclick="renderView(artesHome)">Ilustração</button></li>
+                <li><button onclick="renderView(artesAnim)">Animação</button></li>
+                <li>
+                    <button onclick="renderView(artesEstampasCD)">Estampas</button>
+                </li>
+                <li><button onclick="renderView(artesGames)">Jogos</button></li>
+                <li><button onclick="renderView()">Sobre</button></li>
+            </ul>
+            <div class="redesa">
+                <a href="https://www.instagram.com/mugiartes/" target="_blank"><img src="images/logos/instagram-logo.svg" alt="" srcset=""></a>
+                <a href="https://twitter.com/Mugi_zuadento" target="_blank"><img src="images/logos/twitter-logo.svg" alt="" srcset=""></a>
+                <a href="https://www.youtube.com/channel/UC6Levw1ktO8nT9sjueW19QA" target="_blank"><img src="images/logos/youtube-logo.svg" alt="" srcset=""></a>
+            </div>
+        </div>`
     }
 
 
@@ -252,6 +270,10 @@ estampasBtn.addEventListener("click", function() {
 }),
 
 renderView(artesHome);
+
+menuColl.addEventListener("click", function() {
+    renderView('subMenu');
+})
 
 eventCheck(ilustraBtn, artesHome);
 eventCheck(animaBtn, artesAnim);
