@@ -21,6 +21,10 @@
     background-color: var(--background);
 }
 
+.mCollapse {
+    display: none;
+}
+
 .menu {
     display: flexbox;
     justify-content: center;
@@ -156,4 +160,43 @@
 
 .voltar-btn a:hover {
     color: white;
+}
+
+@media screen and (max-width: 575.9px) {
+    .img-row {
+        display: block;
+        margin: auto;
+        min-width: 100%;
+    }
+
+    .menu {
+        font-size: xx-large;
+    }
+
+    .menu img {
+        max-width: 20%;
+        margin: 0 5% 8% 30%;
+    }
+
+    .menuBtn, .redes, .nome{
+        display: none;
+    }
+
+    .mCollapse {
+        display: flex;
+        min-width: 10%;
+    }
+
+    .navbar-toggler {
+        width: 100%;
+    }
+
+    .navbar-toggler img {
+        width: 200px;
+    }
+
+    .logoM {
+        display: flex;
+        margin: auto;
+    }
 }

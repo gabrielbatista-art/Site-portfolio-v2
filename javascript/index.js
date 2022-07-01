@@ -69,29 +69,29 @@ let artesAnim = {
 }
 let artesEstampasCD = {
     crazyZazzy: {
-        imagem:"",
+        imagem:"images/estampas/crazyZazzy.jpg",
         link: "",
         alternative: "Crazy Zazzy"
     },
-    crazyZazzy: {
-        imagem:"",
+    missNight: {
+        imagem:"images/estampas/missNight.jpg",
         link: "",
-        alternative: "Crazy Zazzy"
+        alternative: "Miss Night"
     },
-    crazyZazzy: {
-        imagem:"",
+    topTemple: {
+        imagem:"images/estampas/topTemple.jpg",
         link: "",
-        alternative: "Crazy Zazzy"
+        alternative: "Top Temple"
     },
-    crazyZazzy: {
-        imagem:"",
+    waterfall: {
+        imagem:"images/estampas/waterfall.jpg",
         link: "",
-        alternative: "Crazy Zazzy"
+        alternative: "Waterfall"
     },
-    crazyZazzy: {
-        imagem:"",
+    chillin: {
+        imagem:"images/estampas/chillin.jpg",
         link: "",
-        alternative: "Crazy Zazzy"
+        alternative: "Chillin"
     },
 
 
@@ -167,7 +167,7 @@ const estampaHdn = document.getElementsByClassName("estampa-hdn");
 
 
 estampaHdn[0].style.display = "none";
-estampaHdn[1].style.display = "none";
+// estampaHdn[1].style.display = "none";
 
 function renderView (section) {
     let images = "";
@@ -257,6 +257,6 @@ renderView(artesHome);
 eventCheck(ilustraBtn, artesHome);
 eventCheck(animaBtn, artesAnim);
 eventCheck(estampasCD, artesEstampasCD);
-eventCheck(estampasBV, artesEstampasBV);
+// eventCheck(estampasBV, artesEstampasBV);
 eventCheck(jogosBtn, artesGames);
 eventCheck(sobreBtn, artesHome);
