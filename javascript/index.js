@@ -148,7 +148,11 @@ let artesGames = {
     },
 }
 let sobre = {
-
+    Gabriel: {
+        imagem: "",
+        texto: "",
+        email: "",
+    }
 }
 
 
@@ -172,7 +176,7 @@ estampaHdn[0].style.display = "none";
 function renderView (section) {
     let images = "";
 
-    if(section != artesAnim && section != artesGames && section != 'subMenu'){
+    if(section != artesAnim && section != artesGames && section != 'subMenu' && section != sobre){
         for (let key in section) {
             images += `
             <div class="img-row">
@@ -218,7 +222,7 @@ function renderView (section) {
                     <button onclick="renderView(artesEstampasCD)">Estampas</button>
                 </li>
                 <li><button onclick="renderView(artesGames)">Jogos</button></li>
-                <li><button onclick="renderView()">Sobre</button></li>
+                <li><button onclick="renderView(sobre)">Sobre</button></li>
             </ul>
             <div class="redesa">
                 <a href="https://www.instagram.com/mugiartes/" target="_blank"><img src="images/logos/instagram-logo.svg" alt="" srcset=""></a>
@@ -226,6 +230,25 @@ function renderView (section) {
                 <a href="https://www.youtube.com/channel/UC6Levw1ktO8nT9sjueW19QA" target="_blank"><img src="images/logos/youtube-logo.svg" alt="" srcset=""></a>
             </div>
         </div>`
+    } else if (section === sobre) {
+        images += `<div class="sobre">
+                        <h1>Sobre</h1>
+                    </div>
+                    <div class="sobre-cont">
+                        <div class="sobre-img">
+                            <img src="images/etc/eu.jpg" alt="foto">
+                        </div>
+                        <div class="sobre-text-cont">
+                            <p>Olá, meu nome é Gabriel Batista.<br><br>
+                                Sou um ilustrador e designer de Alagoas.<br><br>
+                                Me formei em Design pela Universidade Federal De Alagoas em 2018. Trabalho como ilustrador freelancer desde então, já tendo produzido peças para diversos meios como: Animação, moda, jogos, livros entre outros.<br><br>
+                                Entre em contato comigo pelas redes sociais ou pelo meu e-mail:
+                            </p>
+                            <p>poxerilustra@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class> </div>
+                    `
     }
 
 
@@ -273,10 +296,11 @@ renderView(artesHome);
 
 menuColl.addEventListener("click", function() {
     renderView('subMenu');
+    document.getElementById("footer").style.display = 'none';
 })
 
 eventCheck(ilustraBtn, artesHome);
 eventCheck(animaBtn, artesAnim);
 eventCheck(estampasCD, artesEstampasCD);
 eventCheck(jogosBtn, artesGames);
-eventCheck(sobreBtn, artesHome);
+eventCheck(sobreBtn, sobre);

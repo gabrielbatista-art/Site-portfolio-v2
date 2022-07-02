@@ -166,6 +166,40 @@
     color: white;
 }
 
+.sobre {
+    margin-top: 8%;
+}
+
+.sobre-cont {
+    display: flex;
+}
+
+.sobre-img {
+    min-width: 40%;
+}
+
+.sobre-img img {
+    max-width: 100%;
+}
+
+.sobre-text-cont {
+    margin: auto;
+}
+
+.sobre-text-cont p {
+    margin: 0 5%;
+    align-self: center;
+}
+
+footer {
+    background-color: #ffbe28;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 1%;
+}
+
 @media screen and (max-width: 575.9px) {
     .img-row {
         display: block;
@@ -241,5 +275,24 @@
 
     .navbar-toggler img {
         width: 200px;
+    }
+
+    .sobre-cont {
+        display: block;
+        align-content: center;
+    }
+
+    .sobre-img {
+        
+        margin: auto 20%;
+        margin-top: 10%;
+    }
+
+    .sobre-text-cont {
+        margin-top: 20%;
+    }
+
+    .sobre-text-cont p {
+        margin-bottom: 3%;
     }
 }
