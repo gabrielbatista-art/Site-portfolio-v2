@@ -228,6 +228,7 @@ function renderView (section) {
                 <a href="https://www.instagram.com/mugiartes/" target="_blank"><img src="images/logos/instagram-logo.svg" alt="" srcset=""></a>
                 <a href="https://twitter.com/Mugi_zuadento" target="_blank"><img src="images/logos/twitter-logo.svg" alt="" srcset=""></a>
                 <a href="https://www.youtube.com/channel/UC6Levw1ktO8nT9sjueW19QA" target="_blank"><img src="images/logos/youtube-logo.svg" alt="" srcset=""></a>
+                <a href="https://www.behance.net/mugichoco" target="_blank"><img src="images/logos/behance-logo.svg" alt="" srcset=""></a>
             </div>
         </div>`
     } else if (section === sobre) {
