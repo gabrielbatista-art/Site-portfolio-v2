@@ -41,6 +41,16 @@ let artesHome = {
     }
 };
 let artesAnim = {
+    abajur: {
+        imagem: "https://www.youtube.com/embed/dGZGGY4a0gw",
+        link: "",
+        alternative: "Clipe animado para a música Abajur de LoreB"
+    },
+    noMarNoCeu: {
+        imagem: "https://www.youtube.com/embed/awp47rMfAMA",
+        link: "",
+        alternative: "Clipe animado para a música No Mar No Céu de LoreB"
+    },
     chocolateDreams: {
         imagem: "https://www.youtube.com/embed/LJ2laER62OY",
         link: "",
