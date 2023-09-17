@@ -1,44 +1,44 @@
 let artesHome = {
-    cityGuy: {
-        imagem: "images/home/giant-home.jpg",
-        link: "https://www.behance.net/gallery/147711239/City-Giant",
-        alternative: "A giant guy sitting in the middle of the city."
+    jibaro: {
+        imagem: "images/home/jibaro-home.jpg",
+        link: "",
+        alternative: "A fanart of jibaro mermaid."
     },
     bedroomTravel: {
         imagem: "images/home/bedroom-travel-home.jpg",
-        link: "https://www.behance.net/gallery/147390719/Bedroom-Travel",
+        link: "",
         alternative: "A guy playing guitar and smoking on his bedroom with planets inside of it."
     },
     cloudGuy: {
         imagem: "images/home/cloud-guy-home.jpg",
-        link: "https://www.behance.net/gallery/147393495/Cloud-Guy",
+        link: "",
         alternative: "A guy with crazy hair floating through the clouds."
     },
     adventurers: {
         imagem: "images/home/adventurers-home.jpg",
-        link: "https://www.behance.net/gallery/180230747/Adventurers",
+        link: "",
         alternative: "Adventurers on a wall deciding where to go next."
     },
     streetSkaters: {
         imagem: "images/home/skatersStreet-home.jpg",
-        link: "https://www.behance.net/gallery/147392553/Skaters-Street",
+        link: "",
         alternative: "Skaters skating down the street."
     },
-    mountainLady: {
-        imagem: "images/home/Mountain_lady.jpg",
+    wandaVision: {
+        imagem: "images/home/wandavision-home.jpg",
         link:"",
         alternative: "A wandavision fanart showing Wanda and Vision."
     },
     bonsai: {
         imagem: "images/home/bonsai-home.jpg",
-        link: "https://www.behance.net/gallery/147707511/Bonsai",
+        link: "",
         alternative: "A girl using cellphone while sitting in a bonsai."
     },
-    tecidos: {
-        imagem: "images/home/tecidos.jpg",
-        link: "https://www.behance.net/gallery/180230839/Tecidos",
-        alternative: "A fanart of jibaro mermaid."
-    },
+    cityGuy: {
+        imagem: "images/home/giant-home.jpg",
+        link: "",
+        alternative: "A giant guy sitting in the middle of the city."
+    }
 };
 let artesAnim = {
     abajur: {
@@ -191,7 +191,7 @@ function renderView (section) {
             images += `
             <div class="img-row">
                 <img src="${section[key].imagem}" alt="${section[key].alternative}" class="imageOverlay">
-                <a href='${section[key].link}' target="_blank">
+                <a href='#'>
                     <div class="overlayTextImage">
                         <div class="textOver">${key}</div>
                     </div>
@@ -303,7 +303,7 @@ estampasBtn.addEventListener("click", function() {
     UnhideHide(estampaHdn);
 }),
 
-renderView(artesHome);
+renderView(artesGames);
 
 menuColl.addEventListener("click", function() {
     renderView('subMenu');

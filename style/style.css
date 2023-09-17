@@ -3,10 +3,16 @@
     --darkYellow: #492300;
 }
 
+
 * {
     padding: 0;
     margin: 0;
     margin-top: 3px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 #logo {
