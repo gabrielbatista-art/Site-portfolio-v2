@@ -26,7 +26,7 @@ let artesHome = {
     },
     mountainLady: {
         imagem: "images/home/Mountain_lady.jpg",
-        link:"https://www.behance.net/gallery/180231047/Mountain-Lady?share=1",
+        link:"https://www.behance.net/gallery/180231047/Mountain-Lady",
         alternative: "A mountain lady"
     },
     bonsai: {
