@@ -26,8 +26,8 @@ let artesHome = {
     },
     mountainLady: {
         imagem: "images/home/Mountain_lady.jpg",
-        link:"",
-        alternative: "A wandavision fanart showing Wanda and Vision."
+        link:"https://www.behance.net/gallery/180231047/Mountain-Lady?share=1",
+        alternative: "A mountain lady"
     },
     bonsai: {
         imagem: "images/home/bonsai-home.jpg",
@@ -35,9 +35,9 @@ let artesHome = {
         alternative: "A girl using cellphone while sitting in a bonsai."
     },
     tecidos: {
-        imagem: "images/home/tecidos.jpg",
+        imagem: "images/home/Tecidos.jpg",
         link: "https://www.behance.net/gallery/180230839/Tecidos",
-        alternative: "A fanart of jibaro mermaid."
+        alternative: "Tecidos."
     },
 };
 let artesAnim = {
