@@ -4,15 +4,30 @@ let artesHome = {
         link: "https://www.behance.net/gallery/147711239/City-Giant",
         alternative: "A giant guy sitting in the middle of the city."
     },
-    bedroomTravel: {
-        imagem: "images/home/bedroom-travel-home.jpg",
-        link: "https://www.behance.net/gallery/147390719/Bedroom-Travel",
-        alternative: "A guy playing guitar and smoking on his bedroom with planets inside of it."
-    },
     cloudGuy: {
         imagem: "images/home/cloud-guy-home.jpg",
         link: "https://www.behance.net/gallery/147393495/Cloud-Guy",
         alternative: "A guy with crazy hair floating through the clouds."
+    },
+    trem: {
+        imagem: "images/home/Trem.jpg",
+        link: "https://www.behance.net/gallery/180264399/Trem",
+        alternative: "A meeting under a train bridge"
+    },
+    invasores: {
+        imagem: "images/home/Invasores.jpg",
+        link: "https://www.behance.net/gallery/180264483/Invasores",
+        alternative: "Some kids breaking into an old house."
+    },
+    umbrella: {
+        imagem: "images/home/Guarda_chuva.jpg",
+        link: "https://www.behance.net/gallery/180264583/Umbrella",
+        alternative: "An umbrella, a dream and a sea."
+    },
+    bedroomTravel: {
+        imagem: "images/home/bedroom-travel-home.jpg",
+        link: "https://www.behance.net/gallery/147390719/Bedroom-Travel",
+        alternative: "A guy playing guitar and smoking on his bedroom with planets inside of it."
     },
     adventurers: {
         imagem: "images/home/adventurers-home.jpg",
@@ -165,6 +180,7 @@ let sobre = {
     }
 }
 
+let teste;
 
 //Atribuição de elementos a variáveis
 const portfolioHome = document.getElementById("portfolio-home");
